@@ -1,0 +1,12 @@
+@echo off
+setlocal
+
+set "PIN= UR WANTED PIN"
+set /p "userpin=Enter PIN to access BACKUP.txt: "
+
+if "%userpin%"=="%PIN%" (
+    start notepad.exe "THE DESIGNATED PATH FOR THE FILE U WANNA LOCK"
+) else (
+    echo Incorrect PIN.
+    pause
+)
